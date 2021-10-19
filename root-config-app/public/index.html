@@ -24,7 +24,26 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>React App - com-edisonmoreno</title>
+    <meta name="importmap-type" content="systemjs-importmap" />
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@single-spa-test/app-angular": "http://localhost:4200/main.js",
+          "@single-spa-test/app-react": "http://localhost:8080/app-react.js"
+        }
+      }
+    </script>
+    <script
+      type="systemjs-importmap"
+      src="https://storage.googleapis.com/react.microfrontends.app/importmap.json"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.2.5/dist/system.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.2.5/dist/extras/amd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.2.5/dist/extras/named-exports.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.2.5/dist/extras/named-register.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js"></script>
+    <script src="https://unpkg.com/zone.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
