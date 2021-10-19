@@ -8,17 +8,17 @@ Creación de una aplicación con **React** y **Angular**, una será la contenedo
 
 # Ejecución
 
-## Root config app
+### Root config app
 
 cd .\root-config-app\
 npm start
 
-## App React
+### App React
 
 cd .\app-react\
 npm start
 
-## App Angular
+### App Angular
 
 cd .\app-angular\
 npm build
